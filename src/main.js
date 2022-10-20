@@ -1,4 +1,5 @@
 import "./css/index.css"
+import IMask from "imask"
 
 const creditCardBGColor01 = document.querySelector(
   ".cc-bg svg > g g:nth-child(1) path"
@@ -22,3 +23,10 @@ function setCardType(type) {
 setCardType("mastercard")
 
 globalThis.setCardType = setCardType
+
+const securityCode = document.querySelector("#security-code")
+const securityCodePattern = {
+  mask: "0000",
+}
+
+const securityCodeMasked = IMask(securityCode, securityCodePattern)
