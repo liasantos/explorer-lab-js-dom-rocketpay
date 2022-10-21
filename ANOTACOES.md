@@ -37,11 +37,13 @@
     <br />
     //Output: Array [B, C]
     <br />
-    //g significa global - Pesquisa se existe ou não o padrão
+    //g significa global
+  - Pesquisa se existe ou não o padrão
     <br />
     `const index = 'aBC'.search(/[A-Z]/)`
     <br />
-    //Output: 1 - Substitui os padrões por um novo valor
+    //Output: 1
+  - Substitui os padrões por um novo valor
     <br />
     `const next = 'aBC'.replace(/a/, 'A')`
     <br />
