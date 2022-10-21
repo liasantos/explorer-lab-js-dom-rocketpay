@@ -31,23 +31,24 @@
     - `const re = /foo/`
       <br />
       `const re = new RegExp(/foo/)`
-  - Funções usadas em Strings - Agrupa em padrões em um array
-    <br />
-    `const matches = 'aBC'.match(/[A-Z]/g`
-    <br />
-    //Output: Array [B, C]
-    <br />
-    //g significa global
-  - Pesquisa se existe ou não o padrão
-    <br />
-    `const index = 'aBC'.search(/[A-Z]/)`
-    <br />
-    //Output: 1
-  - Substitui os padrões por um novo valor
-    <br />
-    `const next = 'aBC'.replace(/a/, 'A')`
-    <br />
-    //Output: ABC
+  - Funções usadas em Strings
+    - Agrupa em padrões em um array
+      <br />
+      `const matches = 'aBC'.match(/[A-Z]/g`
+      <br />
+      //Output: Array [B, C]
+      <br />
+      //g significa global
+    - Pesquisa se existe ou não o padrão
+      <br />
+      `const index = 'aBC'.search(/[A-Z]/)`
+      <br />
+      //Output: 1
+    - Substitui os padrões por um novo valor
+      <br />
+      `const next = 'aBC'.replace(/a/, 'A')`
+      <br />
+      //Output: ABC
 
 <p align="center">
   <img alt="cheatsheat Regex" src=".github/cheatsheet-regex.jpg" width="65%">
