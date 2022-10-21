@@ -19,8 +19,7 @@ function setCardType(type) {
   creditCardBGColor02.setAttribute("fill", colors[type][1])
   creditCardLogo.setAttribute("src", `cc-${type}.svg`)
 }
-
-setCardType("mastercard")
+setCardType("default")
 
 globalThis.setCardType = setCardType
 
@@ -99,4 +98,15 @@ securityCodeMasked.on("accept", () => {
 function updateSecurityCode(code) {
   const ccSecurity = document.querySelector(".cc-security .value")
   ccSecurity.innerText = code.length === 0 ? "123" : code
+}
+
+cardNumberMasked.on("accept", () => {
+  const cardType = cardNumberMasked.masked.currentMask.cardtype
+  updateCardNumber(cardNumberMasked.value)
+  setCardType(cardType)
+})
+
+function updateCardNumber(number) {
+  const ccNumber = document.querySelector(".cc-number")
+  ccNumber.innerText = number.length === 0 ? "1234 5678 9012 3456" : number
 }
