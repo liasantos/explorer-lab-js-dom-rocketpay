@@ -49,7 +49,12 @@
       `const next = 'aBC'.replace(/a/, 'A')`
       <br />
       //Output: ABC
+  - Outras referências
+    - [Regex Tutorial: How to Match Any Pattern of Text](https://youtu.be/sa-TUpSx1JA)
+    - [Regex in 100 seconds](https://fireship.io/lessons/regex-cheat-sheet-js/)
+    - [JavaScript Regex Cheatsheet](https://www.debuggex.com/cheatsheet/regex/javascript)
 
+<br />
 <p align="center">
   <img alt="cheatsheat Regex" src=".github/cheatsheet-regex.jpg" width="65%">
 </p>
