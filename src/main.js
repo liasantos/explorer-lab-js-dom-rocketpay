@@ -68,7 +68,7 @@ const cardNumberPattern = {
   ],
   dispatch: function (appended, dynamicMasked) {
     const number = (dynamicMasked.value + appended).replace(/\D/g, "")
-    const foundMask = dynamicmasked.compiledMasks.find(function (item) {
+    const foundMask = dynamicMasked.compiledMasks.find(function (item) {
       return number.match(item.regex)
     })
     return foundMask
@@ -87,7 +87,16 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
 const cardHolder = document.querySelector("#card-holder")
 cardHolder.addEventListener("input", () => {
-  const ccHolder = document.querySelector(".cc-holder .value ")
+  const ccHolder = document.querySelector(".cc-holder .value")
   ccHolder.innerText =
     cardHolder.value.length === 0 ? "FULANO DA SILVA" : cardHolder.value
 })
+
+securityCodeMasked.on("accept", () => {
+  updateSecurityCode(securityCodeMasked.value)
+})
+
+function updateSecurityCode(code) {
+  const ccSecurity = document.querySelector(".cc-security .value")
+  ccSecurity.innerText = code.length === 0 ? "123" : code
+}
