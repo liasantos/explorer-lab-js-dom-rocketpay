@@ -58,3 +58,11 @@
 <p align="center">
   <img alt="cheatsheat Regex" src=".github/cheatsheet-regex.jpg" width="65%">
 </p>
+
+## Aula 3
+
+- [Vercel](https://vercel.com/) - para deploy
+- addEventListener("evento")
+  - Fica "escutando" o elemento, observando até que a ação especificada aconteça
+  - Exemplo
+    - `addButton.addEventListener("click")` -> função avisa quando houver um click no botão
